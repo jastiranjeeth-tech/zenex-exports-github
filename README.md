@@ -63,9 +63,9 @@ After DNS propagates, GitHub Pages will serve:
 
 ## Enquiry form email updates
 
-- Current behavior: enquiry submits are sent directly using FormSubmit (`ajax` endpoint), with `mailto:` fallback if direct send fails.
+- Current behavior: the contact form posts to FormSubmit using its standard hosted submission flow. Visitors complete any verification there and see the provider’s confirmation. It does not automatically open an email app.
 - Destination email is read from the visible contact email link in [contact/index.html](contact/index.html). If you change that email, enquiries follow it automatically.
-- Important first-time setup: FormSubmit sends an activation/verification email to the destination inbox. Approve it once to start receiving enquiries.
+- Important first-time setup: submit the contact form from the live website, then check the destination inbox (including Spam) for FormSubmit’s activation email. Approve it to start receiving enquiries. Submit a fresh enquiry afterward and verify receipt; a browser confirmation alone does not verify inbox delivery.
 
 ## Recommended enhancement workflow
 
